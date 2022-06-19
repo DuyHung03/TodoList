@@ -1,0 +1,89 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.completed p {
+  text-decoration: line-through;
+  opacity: 0.3;
+}
+
+.wrapper {
+  height: 100vh;
+  background-image: linear-gradient(145deg, #569377 50%, #dbede5 50%);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.wrapper .main {
+  position: absolute;
+  top: 60px;
+}
+.wrapper .main input {
+  padding: 8px 20px;
+  font-size: 24px;
+  outline: none;
+  border: none;
+  border-radius: 15px;
+  min-width: 350px;
+}
+.wrapper .main button {
+  padding: 6px;
+  border: 1px solid #fff;
+  border-radius: 15px;
+  font-size: 20px;
+  background-color: #569377;
+  color: #fff;
+  transition: 0.2s;
+}
+.wrapper .main button:hover {
+  background-color: #fff;
+  color: #569377;
+  cursor: pointer;
+}
+.wrapper .main .list {
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  max-width: 350px;
+  margin-top: 16px;
+  overflow: hidden;
+  height: 600px;
+  min-height: 100%;
+  overflow-y: scroll;
+}
+.wrapper .main .list li {
+  border-radius: 15px;
+  padding: 8px 20px;
+  border-bottom: 1px solid rgba(88, 88, 88, 0.5);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  margin: 8px 0;
+}
+.wrapper .main .list li:first-child {
+  border-bottom: none;
+}
+.wrapper .main .list li:hover {
+  cursor: pointer;
+}
+.wrapper .main .list p, .wrapper .main .list i {
+  font-size: 24px;
+  color: #569377;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  min-width: 30px;
+  transition: 0.2s;
+}
+.wrapper .main .list i:hover {
+  transform: scale(1.2);
+}
+.wrapper .main .list::-webkit-scrollbar {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */
